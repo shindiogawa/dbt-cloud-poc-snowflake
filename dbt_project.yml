@@ -6,7 +6,7 @@ name: 'my_dbt_snowflake_project'
 version: '1.0.0'
 
 # This setting configures which "profile" dbt uses for this project.
-profile: 'default'
+profile: 'snowflake-edw'
 
 # These configurations specify where dbt should look for different types of files.
 # The `source-paths` config, for example, states that models in this project can be
@@ -34,10 +34,12 @@ models:
   my_dbt_snowflake_project:
       # Applies to all files under models/example/
     raw: #tables with raw data
-        schema: raw
-        transient: false
+      schema: raw
+      transient: false
+      materialized: table
+      tags: "raw"
     stg: #tables with data already prepared
-        schema: stg
-        materialized: view
+      schema: stg
+      materialized: view
     dw: # dimensions and facts tables
-        transient: false
+      transient: false
