@@ -39,4 +39,9 @@ models:
   description: Raw data region.
 
 - name: raw_supplier
+  columns:
+    - name: s_suppkey
+      tests:
+        - not_null
+        - unique
   description: Raw data supplier.
