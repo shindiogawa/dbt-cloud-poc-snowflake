@@ -1,0 +1,42 @@
+version: 2
+
+#Sources
+sources:
+  - name: sf_sample_data
+    database: snowflake_sample_data
+    schema: tpch_sf1
+    tables:
+      - name: customer
+      - name: lineitem
+      - name: nation
+      - name: orders
+      - name: part
+      - name: partsupp
+      - name: region
+      - name: supplier
+
+# Models
+models:
+- name: raw_customers
+  description: Raw data customers.
+
+- name: raw_lineitem
+  description: Raw data lineitem.
+
+- name: raw_nation
+  description: Raw data nation.
+
+- name: raw_orders
+  description: Raw data orders.
+
+- name: raw_part
+  description: Raw data part.
+
+- name: raw_partsupp
+  description: Raw data partsupp.
+
+- name: raw_region
+  description: Raw data region.
+
+- name: raw_supplier
+  description: Raw data supplier.
