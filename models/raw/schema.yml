@@ -18,4 +18,25 @@ sources:
 # Models
 models:
 - name: raw_customers
-  description: Raw data customers
+  description: Raw data customers.
+
+- name: raw_lineitem
+  description: Raw data lineitem.
+
+- name: raw_nation
+  description: Raw data nation.
+
+- name: raw_orders
+  description: Raw data orders.
+
+- name: raw_part
+  description: Raw data part.
+
+- name: raw_partsupp
+  description: Raw data partsupp.
+
+- name: raw_region
+  description: Raw data region.
+
+- name: raw_supplier
+  description: Raw data supplier.

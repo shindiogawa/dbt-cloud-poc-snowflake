@@ -41,5 +41,13 @@ models:
     stg: #tables with data already prepared
       schema: stg
       materialized: view
+      tags: "stg"
     dw: # dimensions and facts tables
+      schema: dw
       transient: false
+
+seeds:
+  schema: raw
+
+snapshots:
+  transient: false
