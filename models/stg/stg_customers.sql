@@ -1,3 +1,8 @@
+{{
+    config(
+        materialized='ephemeral'
+    )
+}}
 select distinct
     c_custkey,
     c_name,
